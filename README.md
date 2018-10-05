@@ -6,6 +6,9 @@ Project for the code exercise portion of the Get Selected interview process.
 
 Monorepo setup to (hopefully) simplify the frontend and API setup
 
+Using Node version v8.12.0 -- latest LTS of version 8
+Using NVM to manage Node version's between the projects
+
 ### Setup
 
 * Clone repo
