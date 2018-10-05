@@ -9,21 +9,20 @@ import logo from '../../assets/logo.svg'
 class Header extends Component {
   render() {
     return (
-      <header className="Header-container">
-        <div className="Header-logo">
-          <img src={logo} className="Header-logo" alt="logo" />
-        </div>
-        <div className="Header-navigation">
-          <UnreadStatus isUnread={true} />
-          <div className="Header-navigation-item">
-            Messages
+      <React.Fragment>
+        <header className="Header-container">
+          <div className="Header-logo">
+            <img src={logo} className="Header-logo" alt="logo" />
           </div>
-          <UnreadStatus isUnread={false} />
-          <div className="Header-navigation-item">
-            Another Message Center
+          <div className="Header-navigation">
+            <div className="Header-navigation-item">
+              <UnreadStatus isUnread={true} />
+              Messages
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+        <hr className="Header-separator" />
+      </React.Fragment>
     )
   }
 }
