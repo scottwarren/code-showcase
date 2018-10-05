@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+.Message-container--unread {
+  font-weight: bold;
+}
+
 .Message-container:hover {
   background: #ddd;
 }

@@ -23,7 +23,8 @@ class Messages extends Component {
           {messages}
         </div>
         <div className="Messages-display-panel">
-          No Message Selected
+          {!this.props.selectedMessage && 'No message selected'}
+          {this.props.selectedMessage && this.props.selectedMessage.content}
         </div>
       </div>
     )
@@ -33,10 +34,12 @@ class Messages extends Component {
 Messages.propTypes = {
   handleMessageClick: PropTypes.func.isRequired,
   messages: PropTypes.array,
+  selectedMessage: PropTypes.object,
 }
 
 Messages.defaultProps = {
   messages: [],
+  selectedMessage: null,
 }
 
 export default Messages

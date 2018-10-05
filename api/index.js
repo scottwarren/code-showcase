@@ -37,7 +37,6 @@ mongoose.connect('mongodb://localhost/getselected-scott', {
 SourceMapSupport.install()
 
 app.use('/messages', messageRoutes)
-// app.use('/invite', inviteRoutes);
 
 app.get('/', (req,res) => {
   return res.end('Work work!')
