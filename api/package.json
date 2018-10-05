@@ -6,6 +6,9 @@
   "author": "Scott Warren",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "nodeman index.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
