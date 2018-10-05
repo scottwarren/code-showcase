@@ -1,9 +1,13 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 
-import RootReducer from './reducers/rootReducer.js'
+import RootReducer from './reducers/RootReducer.js'
 
-export default function configureStore(initialState = {}) {
+const initialAppState = {
+  messages: [],
+}
+
+export default function configureStore(initialState = initialAppState) {
   return createStore(
     RootReducer,
     applyMiddleware(thunk)

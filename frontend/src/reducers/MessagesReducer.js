@@ -1,17 +1,11 @@
-const initialState = {
-  messages: [],
-}
-
-export default (state = initialState, action) => {
+export default (state = [], action) => {
   console.log('action.type: ', action.type)
   switch (action.type) {
-    case 'GENERATE_NEW_MESSAGE':      
-      return {
-        messages: [
-          ...state.messages,
-          action.payload,
-        ],
-      }
+    case 'GENERATE_NEW_MESSAGE':
+      return [
+        ...state,
+        action.payload,
+      ]
     default:
       return state
   }
