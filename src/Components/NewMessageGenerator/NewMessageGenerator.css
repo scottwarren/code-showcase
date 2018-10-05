@@ -1,0 +1,13 @@
+.NewMessageGenerator-button {
+  background: #DA894C;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+
+  /* Align button to the right, without using floats (so the flow remains the same) */
+  display: flex;
+  margin-left: auto;
+}

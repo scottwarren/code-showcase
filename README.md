@@ -12,3 +12,4 @@ Project for the code exercise portion of the Get Selected interview process.
 
 Project bootstrapped with `create-react-app`
 
+To generate a new unread message with stub data, click the "Receive New Message" button
