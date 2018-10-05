@@ -3,11 +3,7 @@ import thunk from 'redux-thunk'
 
 import RootReducer from './reducers/rootReducer.js'
 
-const selectedInitialState = {
-  messages: [],
-}
-
-export default function configureStore(initialState = selectedInitialState) {
+export default function configureStore(initialState = {}) {
   return createStore(
     RootReducer,
     applyMiddleware(thunk)
