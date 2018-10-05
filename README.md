@@ -1,8 +1,8 @@
 ## Scott Warren
 
-Project for the code exercise portion of the Get Selected interview process.
+Frontend and API code for the project exercise portion of the Get Selected interview process.
 
-## Dependency Information 
+## Global Dependency Information
 
 * Node
   * Version I have installed: `v8.12.0` -- latest LTS of version 8
@@ -10,13 +10,14 @@ Project for the code exercise portion of the Get Selected interview process.
   * Version I have installed: `0.33.2`
   * Why: Using NVM to manage Node version's between the projects
 * Nodemon
-  * Version: I have installed: 
+  * Version: I have installed: `1.18.4`
   * Installed globally
   * Why: Nodemon runs locally and updates the server upon file changes -- useful for development
+  * Note: You can safely ignore this since you won't be running `yarn dev` for the API (use `yarn start` instead)
 
 ## Information
 
-Monorepo setup to (hopefully) simplify the frontend and API setup
+Monorepo setup to (hopefully) simplify the frontend and API setup for this specific project.
 
 I've made the assumption that MongoDB is installed and running locally.
 
@@ -29,7 +30,7 @@ I've made the assumption that MongoDB is installed and running locally.
 * cd `../api`
 * Run `yarn install` to install dependencies
 * Run `yarn start` to start the local express server
-* Create a MongoDB database named "getselected-scott"
+* Create a MongoDB database named `getselected-scott`
 
 ### Notes:
 
