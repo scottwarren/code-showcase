@@ -9,7 +9,13 @@ class Messages extends Component {
   render() {
     let messages = 'No messages found'
 
-    if (this.props.messages.length > 0) messages = this.props.messages.map(m => <Message key={m._id} message={m} />)
+    if (this.props.messages.length > 0) {
+      messages = this.props.messages.map(
+        m => (
+          <Message key={m._id} message={m} handleMessageClick={() => this.props.handleMessageClick(m._id) } />
+        )
+      )
+    }
     
     return (
       <div className="Messages-container">
@@ -25,6 +31,7 @@ class Messages extends Component {
 }
 
 Messages.propTypes = {
+  handleMessageClick: PropTypes.func.isRequired,
   messages: PropTypes.array,
 }
 

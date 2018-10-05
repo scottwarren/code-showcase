@@ -2,6 +2,11 @@
   height: 60px;
   border-bottom: 1px solid #ddd;
   padding: 3px;
+  cursor: pointer;
+}
+
+.Message-container:hover {
+  background: #ddd;
 }
 
 .Message-container:first-child {

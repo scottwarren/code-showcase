@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import './Message.css'
 
-const Message = ({ message }) => {
+const Message = ({ message, handleMessageClick }) => {
   return (
-    <div className="Message-container">
+    <div className="Message-container" onClick={handleMessageClick}>
       <div className="Message-row Message-row--first">
         <span>{message.author}</span>
         <span>{message.createdAt}</span>
@@ -27,7 +27,8 @@ Message.propTypes = {
     author: PropTypes.string.isRequired,
     isSentByCurrentUser: PropTypes.bool.isRequired,
     isUnread: PropTypes.bool.isRequired,
-  }).isRequired
+  }).isRequired,
+  handleMessageClick: PropTypes.func.isRequired,
 }
 
 export default Message
