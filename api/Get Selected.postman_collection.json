@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"_postman_id": "d0f9dea6-90e0-4476-ade5-9db51fd543ba",
+			"_postman_id": "b12175f6-6d7e-43c0-ac5a-362711053d5f",
 			"name": "Get Messages",
 			"request": {
 				"method": "GET",
@@ -27,14 +27,46 @@
 			"response": []
 		},
 		{
-			"_postman_id": "283fdbb6-a63d-4153-a663-321390b5f2b7",
+			"_postman_id": "cd5c7725-3b96-442d-a12d-3678e4bfd440",
 			"name": "Generate a new (stub) message",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:3001/messages/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"messages",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "2531f798-e80a-4bc0-9f27-baf75083fbac",
+			"name": "Mark a message as read",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/messages/5bb7bc0157b256310f136d51/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"messages",
+						"5bb7bc0157b256310f136d51",
+						"read"
+					]
 				}
 			},
 			"response": []

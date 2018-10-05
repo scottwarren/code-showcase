@@ -53,6 +53,8 @@ Click on a message to show it's content's in the message content panel on the ri
  * Not hit the messages API endpoint to retrieve the messages when we change the `read` status
  * Messages list pagination
  * Show the thread in the display message panel instead of just the latest message
+ * Change the repo installation to be a one script to start all applications
+ * _TESTING_
 
 #### API
 
@@ -74,3 +76,6 @@ I used Mongoose ORM to enable easy use with MongoDB
  * Messages list pagination
  * Improve the stub message generation to not always include Lorem Ipsum
  * Thread endpoint instead of message endpoint
+ * Change the repo installation to be a one script to start all applications
+ * Improve documentation for the endpoints (Postman collection probably isn't enough)
+ * _TESTING_
