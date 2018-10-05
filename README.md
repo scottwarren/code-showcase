@@ -1,6 +1,15 @@
-## Scott Warren
+## Thoughts/Notes
 
 Frontend and API code for the project exercise portion of the Get Selected interview process.
+
+If there are any issues/questions (eg setting up, or why I did something a particular way) _please_ contact me!
+
+Monorepo setup to (hopefully) simplify the frontend and API setup for this specific project.
+
+I've made the assumption that MongoDB is installed and running locally.
+
+Based on the document provided for this project, I didn't appear to require the `invites` API endpoint, and thus I have left this out of the code completed.
+
 
 ## Global Dependency Information
 
@@ -14,16 +23,6 @@ Frontend and API code for the project exercise portion of the Get Selected inter
   * Installed globally
   * Why: Nodemon runs locally and updates the server upon file changes -- useful for development
   * Note: You can safely ignore this since you won't be running `yarn dev` for the API (use `yarn start` instead)
-
-## Information
-
-If there are any issues/questions (eg setting up, or why I did something a particular way) _please_ contact me!
-
-Monorepo setup to (hopefully) simplify the frontend and API setup for this specific project.
-
-I've made the assumption that MongoDB is installed and running locally.
-
-Based on the document provided for this project, I didn't appear to require the `invites` API endpoint, and thus I have left this out of the code completed.
 
 ### Setup
 
