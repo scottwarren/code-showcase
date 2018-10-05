@@ -21,16 +21,18 @@ Monorepo setup to (hopefully) simplify the frontend and API setup for this speci
 
 I've made the assumption that MongoDB is installed and running locally.
 
+Based on the document provided for this project, I didn't appear to require the `invites` API endpoint, and thus I have left this out of the code completed.
+
 ### Setup
 
 * Clone repo
+* Create a MongoDB database named `getselected-scott`
 * `cd ./frontend`
 * Run `yarn install` to install dependencies
 * Run `yarn start` to start the local server
 * cd `../api`
 * Run `yarn install` to install dependencies
-* Run `yarn start` to start the local express server
-* Create a MongoDB database named `getselected-scott`
+* Run `yarn start` to start the local development instance of the API
 
 ### Notes:
 
@@ -40,6 +42,29 @@ Frontend bootstrapped with `create-react-app`
 
 To generate a new unread message with stub data, click the "Receive New Message" button
 
+Click on a message to show it's content's in the message content panel on the right, as well as mark the message as read
+
+
+*Remaining/Outstanding changes/future improvements*
+
+ * I still need to add a "loading" indicator for when the frontend is fetching messages instead of just showing "No messages found" until it's fetched
+ * Display the date for the message received in a more human readable format (eg `20m ago`, `1d ago`)
+ * Not hit the messages API endpoint to retrieve the messages when we change the `read` status
+
 #### API
 
 I've exported a Postman collection into the `/api` folder, which you can import into Postman to see the API routes
+
+I used Mongoose ORM to enable easy use with MongoDB
+
+* Routes definitions are contained within the `routes` folder
+* Controller code (of which, the methods are references in the routes definition) are contained within the `controllers` folder
+* Mongoose model definition are contained within the `models`
+* Main app definition and setup is within the `index.js` file. It defines things like:
+  * DB name
+  * Port to run the local environment on
+  * The base route
+
+*Remaining/Outstanding changes/future improvements*
+ * Sort the messages that are returned when returning all messages by time received
+ * Clean up of the `index.js` file contents
