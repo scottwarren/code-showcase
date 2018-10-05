@@ -8,7 +8,7 @@ class Footer extends Component {
       <React.Fragment>
         <hr className="Footer-separator" />
         <footer className="Footer-container">
-          Scott Warren's Project for the code exercise portion of the Get Selected interview process
+          Scott Warren's project for the code exercise portion of Get Selected's interview process
         </footer>
       </React.Fragment>
     )

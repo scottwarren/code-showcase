@@ -13,3 +13,8 @@
   display: flex;
   margin-left: auto;
 }
+
+.NewMessageGenerator-button:hover {
+  background-image: none;
+  background-color: #f48022;
+}

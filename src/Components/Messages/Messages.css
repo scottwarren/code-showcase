@@ -1,0 +1,19 @@
+.Messages-container {
+  min-height: 60vh;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Messages-info-panel, 
+.Messages-display-panel {
+  padding: 10px;
+}
+.Messages-info-panel {
+  width: 40%;
+}
+
+.Messages-display-panel {
+  width: 60%;
+  background: #eee;
+}
