@@ -6,11 +6,11 @@ import './Message.css'
 const Message = ({ message }) => {
   return (
     <div className="Message-container">
-      <div className="Message-row">
+      <div className="Message-row Message-row--first">
         <span>{message.author}</span>
         <span>{message.createdAt}</span>
       </div>
-      <div className="Message-row">
+      <div className="Message-row Message-row--last">
         <div className="Message-content">
           {message.isSentByCurrentUser ? 'You: ': 'Them: '}
           {message.content}

@@ -4,9 +4,24 @@
   padding: 3px;
 }
 
+.Message-container:first-child {
+  border-top: 1px solid #ddd;
+}
+
 .Message-row {
   display: flex;
   justify-content: space-between;
+  height: 50%;
+}
+
+.Message-row--first {
+  align-items: flex-end;
+  padding-bottom: 2px;
+}
+
+.Message-row--last {
+  align-items: flex-start;  
+  padding-top: 2px;
 }
 
 .Message-content {
