@@ -3,7 +3,8 @@ import mongoose from 'mongoose'
 import Message from '../models/message.model'
 
 export const getMessages = (req, res) => {
-  Message.find().exec((err, messages) => {
+  // Sort by newest message first
+  Message.find().sort({ 'createdAt': -1 }).exec((err, messages) => {
     if (err) {
       return res.json({
         'success': false,

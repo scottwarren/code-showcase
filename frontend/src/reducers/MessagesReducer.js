@@ -9,8 +9,8 @@ export default (state = initialMessagesState, action) => {
       return {
         ...state,
         messages: [
-          ...state.messages,
           action.payload,
+          ...state.messages,
         ]
       }
     case 'GET_MESSAGES':

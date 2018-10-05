@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import moment from 'moment'
 
 import './Message.css'
 
@@ -10,7 +11,7 @@ const Message = ({ message, handleMessageClick }) => {
     <div className={`Message-container ${unreadClassName}`} onClick={handleMessageClick}>
       <div className="Message-row Message-row--first">
         <span>{message.author}</span>
-        <span>{message.createdAt}</span>
+        <span className="Message-date">{moment(message.createdAt).fromNow()}</span>
       </div>
       <div className="Message-row Message-row--last">
         <div className="Message-content">

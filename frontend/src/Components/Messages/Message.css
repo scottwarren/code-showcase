@@ -9,6 +9,10 @@
   font-weight: bold;
 }
 
+.Message-date {
+  text-align: right;
+}
+
 .Message-container:hover {
   background: #ddd;
 }
