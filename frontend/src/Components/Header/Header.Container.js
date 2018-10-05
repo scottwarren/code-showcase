@@ -17,8 +17,7 @@ const mapStateToProps = state => {
   const unreadCount = state.messages.reduce((accumulator, message) => {
     
     if (message.isUnread) {
-      debugger
-      return accumulator + 1
+      accumulator++
     }
 
     return accumulator

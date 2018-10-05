@@ -6,8 +6,7 @@ import './UnreadStatus.css'
 // @TODO: use a prop that accepts how many unread messages there are
 const UnreadBadge = ({ count }) => (
   <span className="UnreadStatus-badge">
-    <sup>{count} </sup>
-    <sup>New</sup>
+    <sup>{count} New</sup>
   </span>
 )
 
