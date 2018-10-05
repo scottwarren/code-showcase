@@ -21,7 +21,6 @@ export default (state = initialMessagesState, action) => {
         ],
       }
     case 'SELECT_MESSAGE':
-      // Find message by ID and mark as read
       return {
         ...state,
         selectedMessageId: action.payload.selectedMessageId

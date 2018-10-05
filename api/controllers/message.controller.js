@@ -21,7 +21,7 @@ export const getMessages = (req, res) => {
 
 export const generateStubMessages = (req, res) => {
   const stubMessage = {
-    isUnread: Math.random() > 0.5,
+    isUnread: true,
     author: 'Frederick Jones',
     isSentByCurrentUser: Math.random() > 0.5,
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie lacus a est fringilla lobortis. Mauris ac rhoncus turpis. Praesent sed ullamcorper dui. Duis lacinia urna ut urna tincidunt, quis porttitor nulla vestibulum.',
