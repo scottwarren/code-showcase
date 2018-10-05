@@ -5,11 +5,10 @@ var Schema = mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  unread: Boolean,
-  authorId: String,
-  sentByCurrentUser: Boolean,
-  title: String,
-  messageSynopsis: String,
+  isUnread: Boolean,
+  author: String,
+  isSentByCurrentUser: Boolean,
+  content: String,
 })
 
 export default mongoose.model('Message', Schema)

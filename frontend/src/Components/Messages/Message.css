@@ -1,0 +1,17 @@
+.Message-container {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  padding: 3px;
+}
+
+.Message-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Message-content {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

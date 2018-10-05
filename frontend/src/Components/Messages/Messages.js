@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Message from './Message'
+
 import './Messages.css'
 
 class Messages extends Component {
   render() {
     let messages = 'No messages found'
 
-    if (this.props.messages.length > 0) messages = this.props.messages.map(m => <div key={m._id}>{m.title}</div>)
+    if (this.props.messages.length > 0) messages = this.props.messages.map(m => <Message key={m._id} message={m} />)
     
     return (
       <div className="Messages-container">

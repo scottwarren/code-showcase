@@ -23,7 +23,6 @@ class App extends Component {
         <Header />
         <div className="App-container">
           <Messages />
-          {/* TODO: Pass action dispatcher for onClick to generate a new message */}
           <NewMessageGenerator onClick={this.props.generateNewMessage} />
         </div>
         <Footer />
