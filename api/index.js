@@ -30,7 +30,7 @@ const port = process.env.PORT || 3001
 // Connect to local Mongo database
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/getselected-scott', {
-  useMongoClient: true,
+  useNewUrlParser: true,
 });
 
 // Enable sourcemap's so we see the information from the source of the problem, rather than the compiled output
@@ -50,5 +50,5 @@ app.use((req, res, next) => {
 
 // Starting the local development server
 app.listen(port, () => {
-  console.log(`App Server Listening at ${port}`);
+  console.log(`Local server running on http://localhost:${port}`);
 })
