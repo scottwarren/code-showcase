@@ -1,9 +1,4 @@
-/*
-  File reserved for global styles (global font styles, background colours, etc
-*/
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #e5e5e5;
+.App {
+  margin: 0 auto;
+  max-width: 960px;
 }
