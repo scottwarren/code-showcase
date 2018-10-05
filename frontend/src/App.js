@@ -7,11 +7,16 @@ import Messages from './Components/Messages'
 import NewMessageGenerator from './Components/NewMessageGenerator'
 
 import { generateNewMessageAction } from './actions/generateNewMessageAction'
+import { getMessagesAction } from './actions/getMessagesAction'
 
 
 import './App.css'
 
 class App extends Component {
+  componentDidMount() {
+    this.props.getMessages()
+  }
+
   render() {
     return (
       <div className="App">
@@ -32,7 +37,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  generateNewMessage: () => dispatch(generateNewMessageAction())
+  generateNewMessage: () => dispatch(generateNewMessageAction()),
+  getMessages: () => dispatch(getMessagesAction()),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -6,6 +6,10 @@ export default (state = [], action) => {
         ...state,
         action.payload,
       ]
+    case 'GET_MESSAGES':
+      return [
+        ...action.payload
+      ]
     default:
       return state
   }
