@@ -14,7 +14,8 @@ class App extends Component {
         <Header />
         <div className="App-container">
           <Messages />
-          <NewMessageGenerator />
+          {/* TODO: Pass action dispatcher for onClick to generate a new message */}
+          <NewMessageGenerator onClick={() => {}} />
         </div>
         <Footer />
       </div>
