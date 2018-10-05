@@ -51,7 +51,8 @@ Click on a message to show it's content's in the message content panel on the ri
 
  * Add a "loading" indicator for when the frontend is fetching messages instead of just showing "No messages found" until it's fetched
  * Not hit the messages API endpoint to retrieve the messages when we change the `read` status
- * Message pagination
+ * Messages list pagination
+ * Show the thread in the display message panel instead of just the latest message
 
 #### API
 
@@ -66,8 +67,10 @@ I used Mongoose ORM to enable easy use with MongoDB
   * DB name
   * Port to run the local environment on
   * The base route
+* Stub data generated using [Faker](https://github.com/marak/Faker.js/) for the message content and the author name
 
 *Remaining/Outstanding changes/future improvements*
  * Clean up of the `index.js` file contents
- * Message pagination
+ * Messages list pagination
  * Improve the stub message generation to not always include Lorem Ipsum
+ * Thread endpoint instead of message endpoint
