@@ -4,22 +4,21 @@ import PropTypes from 'prop-types'
 import './UnreadStatus.css'
 
 // @TODO: use a prop that accepts how many unread messages there are
-const UnreadBadge = () => (
+const UnreadBadge = ({ count }) => (
   <span className="UnreadStatus-badge">
+    <sup>{count} </sup>
     <sup>New</sup>
   </span>
 )
 
 class UnreadStatus extends Component {
   render() {
-    // When this relies on there being a number instead of a boolean (when we're passed the number of unread messages)
-    // We should calculate this in the render. Example: `{unreadCount > 0 && (<UnreadBadget count={unreadCount} />) }`
-    return this.props.isUnread && <UnreadBadge />
+    return this.props.unreadCount > 0 && <UnreadBadge count={this.props.unreadCount} />
   }
 }
 
 UnreadStatus.propTypes = {
-  isUnread: PropTypes.bool.isRequired
+  unreadCount: PropTypes.number.isRequired
 }
 
 export default UnreadStatus

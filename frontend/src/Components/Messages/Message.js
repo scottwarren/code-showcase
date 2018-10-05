@@ -15,7 +15,7 @@ const Message = ({ message }) => {
           {message.isSentByCurrentUser ? 'You: ': 'Them: '}
           {message.content}
         </div>
-        <span>{message.isUnread ? 'Read' : 'Unread'}</span>
+        <span>{message.isUnread ? 'Unread' : 'Read'}</span>
       </div>
     </div>
   )

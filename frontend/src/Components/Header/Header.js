@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import UnreadStatus from './UnreadStatus'
 
@@ -16,7 +17,7 @@ class Header extends Component {
           </div>
           <div className="Header-navigation">
             <div className="Header-navigation-item">
-              <UnreadStatus isUnread={true} />
+              <UnreadStatus unreadCount={this.props.unreadCount} />
               Messages
             </div>
           </div>
@@ -25,6 +26,10 @@ class Header extends Component {
       </React.Fragment>
     )
   }
+}
+
+Header.propTypes = {
+  unreadCount: PropTypes.number.isRequired,
 }
 
 export default Header
