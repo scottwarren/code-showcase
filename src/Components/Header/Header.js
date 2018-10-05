@@ -21,7 +21,7 @@ class Header extends Component {
             </div>
           </div>
         </header>
-        <hr className="Header-separator" />
+        <hr />
       </React.Fragment>
     )
   }

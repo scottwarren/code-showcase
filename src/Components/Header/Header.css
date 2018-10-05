@@ -6,7 +6,7 @@
 .Header-logo {
   width: 135px;
   margin: 5px;
-  /* Used to make the logo appear more vertically aligned (since the logo has surrounding white space */
+  /* Used to make the logo _appear_ more vertically aligned (since the logo has surrounding white space */
   margin-top: 10px;
 }
 
@@ -22,10 +22,4 @@
   font-weight: bold;
   margin: 10px;
   color: #3F6773;
-}
-
-.Header-separator {
-  border-color: #f2f2f2;
-  border-width: 1px;
-  border-style: solid;
 }
