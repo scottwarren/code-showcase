@@ -6,7 +6,7 @@ import mongoose from 'mongoose'
 import SourceMapSupport from 'source-map-support'
 
 import messageRoutes from './routes/message.route';
-import messageRoutes from './routes/invite.route';
+// import inviteRoutes from './routes/invite.route';
 
 const app = express();
 
@@ -36,8 +36,8 @@ mongoose.connect('mongodb://localhost/getselected-scott', {
 // Enable sourcemap's so we see the information from the source of the problem, rather than the compiled output
 SourceMapSupport.install();
 
-app.use('/message', messageRoutes);
-app.use('/invite', inviteRoutes);
+app.use('/messages', messageRoutes);
+// app.use('/invite', inviteRoutes);
 
 app.get('/', (req,res) => {
   return res.end('Work work!');
