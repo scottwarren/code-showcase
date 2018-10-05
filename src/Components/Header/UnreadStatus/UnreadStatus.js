@@ -12,13 +12,7 @@ class UnreadStatus extends Component {
       isUnread
     } = this.props
 
-    return (
-      <div>
-        {/* Displaying the unread badge */}
-        {isUnread && <UnreadBadge />}
-        {this.props.children}
-      </div>
-    )
+    return isUnread && <UnreadBadge />
   }
 }
 

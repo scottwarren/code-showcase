@@ -4,6 +4,6 @@ import UnreadStatus from './UnreadStatus';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<UnreadStatus />, div);
+  ReactDOM.render(<UnreadStatus isUnread={true} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

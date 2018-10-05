@@ -1,7 +1,21 @@
-/* .App-header {
-  height: 120px;
-} */
+.Header-container {
+  /* Used to move the menu inline with the logo */
+  display: flex;
+}
 
-.App-logo {
+.Header-logo {
   width: 135px;
+}
+
+.Header-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header-navigation-item {
+  text-transform: uppercase;
+  font-weight: .8em;
+  font-weight: bold;
+  margin: 10px;
 }

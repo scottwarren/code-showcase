@@ -9,15 +9,19 @@ import logo from '../../assets/logo.svg'
 class Header extends Component {
   render() {
     return (
-      <header className="App-header">
-        <div className="App-logo">
-          <img src={logo} className="App-logo" alt="logo" />
+      <header className="Header-container">
+        <div className="Header-logo">
+          <img src={logo} className="Header-logo" alt="logo" />
         </div>
-        <div>
-          {/* Dumb stub for now for the unread status */}
-          <UnreadStatus isUnread={Math.random() >= 0.5}>
+        <div className="Header-navigation">
+          <UnreadStatus isUnread={true} />
+          <div className="Header-navigation-item">
             Messages
-          </UnreadStatus>
+          </div>
+          <UnreadStatus isUnread={false} />
+          <div className="Header-navigation-item">
+            Another Message Center
+          </div>
         </div>
       </header>
     )
