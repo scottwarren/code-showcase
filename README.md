@@ -70,3 +70,4 @@ I used Mongoose ORM to enable easy use with MongoDB
 *Remaining/Outstanding changes/future improvements*
  * Clean up of the `index.js` file contents
  * Message pagination
+ * Improve the stub message generation to not always include Lorem Ipsum

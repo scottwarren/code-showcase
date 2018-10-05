@@ -11,6 +11,8 @@
 }
 .Messages-info-panel {
   width: 40%;
+  max-height: 60vh;
+  overflow-x: scroll;
 }
 
 .Messages-display-panel {
