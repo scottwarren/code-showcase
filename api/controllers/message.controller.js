@@ -44,3 +44,29 @@ export const generateStubMessages = (req, res) => {
     })
   })
 }
+
+export const markMessageAsRead = (req, res) => {
+
+  const messageId = req.params.id
+
+  Message.findOneAndUpdate({ _id: messageId }, { isUnread: false }).exec((err, message) => {
+    if (err) {
+      return res.json({
+        'success': false,
+        'message': 'Message could not be marked as read'
+      })
+    }
+    if (message) {
+      return res.json({
+        'success': true,
+        'message': 'Message was successfully marked as read',
+        'messageId': messageId,
+      })
+    } else {
+      return res.json({
+        'success': false,
+        'message': 'Message with the given ID was not found'
+      })
+    }
+  })
+}

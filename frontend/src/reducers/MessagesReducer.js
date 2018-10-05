@@ -1,14 +1,31 @@
-export default (state = [], action) => {
+const initialMessagesState = {
+  messages: [],
+  selectedMessageId: null,
+}
+
+export default (state = initialMessagesState, action) => {
   switch (action.type) {
     case 'GENERATE_NEW_MESSAGE':
-      return [
+      return {
         ...state,
-        action.payload,
-      ]
+        messages: [
+          ...state.messages,
+          action.payload,
+        ]
+      }
     case 'GET_MESSAGES':
-      return [
-        ...action.payload
-      ]
+      return {
+        ...state,
+        messages: [
+          ...action.payload
+        ],
+      }
+    case 'SELECT_MESSAGE':
+      // Find message by ID and mark as read
+      return {
+        ...state,
+        selectedMessageId: action.payload.selectedMessageId
+      }
     default:
       return state
   }

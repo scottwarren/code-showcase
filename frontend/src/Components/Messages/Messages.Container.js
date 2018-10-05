@@ -18,14 +18,13 @@ class MessagesContainer extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    messages: state.messages,
+    messages: state.messagesState.messages,
   }
 }
 
 
 const mapDispatchToProps = dispatch => ({
   selectMessageAction: id => { 
-    debugger
     return dispatch(selectMessageAction(id))
   },
 })

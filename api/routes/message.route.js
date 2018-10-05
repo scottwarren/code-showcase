@@ -10,4 +10,7 @@ router.route('/')
 router.route('/generate')
   .post(MessageController.generateStubMessages)
 
+router.route('/:id/read')
+  .patch(MessageController.markMessageAsRead)
+
 export default router

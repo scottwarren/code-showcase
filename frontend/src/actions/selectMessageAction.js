@@ -6,6 +6,8 @@ export const selectMessageAction = id => dispatch => {
 
   dispatch({
     type: 'SELECT_MESSAGE',
-    payload: {},
+    payload: {
+      selectedMessageId: id,
+    },
   })
 }

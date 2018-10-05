@@ -14,7 +14,7 @@ class HeaderContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
-  const unreadCount = state.messages.reduce((accumulator, message) => {
+  const unreadCount = state.messagesState.messages.reduce((accumulator, message) => {
     
     if (message.isUnread) {
       accumulator++
@@ -24,7 +24,7 @@ const mapStateToProps = state => {
   }, 0)
 
   return {
-    unreadCount: unreadCount,
+    unreadCount,
   }
 }
 
