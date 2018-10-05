@@ -4,7 +4,7 @@ Project for the code exercise portion of the Get Selected interview process.
 
 ## Information
 
-Setup in a monorepo to group the project's code
+Monorepo setup to (hopefully) simplify the frontend and API setup
 
 ### Setup
 

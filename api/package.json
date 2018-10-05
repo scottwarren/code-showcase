@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API for Get Selected's interview project",
+  "main": "index.js",
+  "author": "Scott Warren",
+  "license": "MIT",
+  "private": true
+}
