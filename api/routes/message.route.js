@@ -7,4 +7,7 @@ const router = express.Router()
 router.route('/')
   .get(MessageController.getMessages)
 
+router.route('/generate')
+  .post(MessageController.generateStubMessages)
+
 export default router

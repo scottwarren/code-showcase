@@ -1,14 +1,15 @@
 import mongoose from 'mongoose'
 
 var Schema = mongoose.Schema({
-  createdAt:{
+  createdAt: {
     type: Date,
     default: Date.now
   },
-  _teacherId: String,
-  _employerId: String,
-  _lastMessageId: String,
-  thread: Array,
+  unread: Boolean,
+  authorId: String,
+  sentByCurrentUser: Boolean,
+  title: String,
+  messageSynopsis: String,
 })
 
-export default mongoose.model('Invite', Schema)
+export default mongoose.model('Message', Schema)
