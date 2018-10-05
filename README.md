@@ -42,3 +42,4 @@ To generate a new unread message with stub data, click the "Receive New Message"
 
 #### API
 
+I've exported a Postman collection into the `/api` folder, which you can import into Postman to see the API routes
