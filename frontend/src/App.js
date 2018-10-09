@@ -13,6 +13,15 @@ import { getMessagesAction } from './actions/getMessagesAction'
 import './App.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    // Sync the messages every second, so the frontend is aware of the complete state (read status, # of unread messages, etc)
+    setInterval(() => {
+      this.props.getMessages()
+    }, 1000)
+  }
+
   componentDidMount() {
     this.props.getMessages()
   }
