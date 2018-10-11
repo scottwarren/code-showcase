@@ -15,9 +15,3 @@ Based on the document provided for this project, I didn't appear to require the 
 
 * Run `yarn install` to install dependencies
 * Run `yarn start` to start the local server
-
-### Testing
-
-End-to-end testing with [Cypress](https://github.com/cypress-io/cypress)
-
-Run tests using `yarn cypress:open` in the frontend directory
