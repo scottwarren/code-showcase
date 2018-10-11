@@ -5,7 +5,7 @@ context('Meta', () => {
   
   describe('Meta information should exist in the application', () => {
     it('should contain the expected title', () => {
-      cy.title().should('contain', 'Get Selected')
+      cy.title().should('contain', 'Code Showcase')
     })
 
     it('should display the logo', () => {
