@@ -1,4 +1,4 @@
-context('Actions', () => {
+context('New Messages', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
