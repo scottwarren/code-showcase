@@ -10,8 +10,10 @@ context('Meta', () => {
 
     it('should display the logo', () => {
       cy.get('div.Header-logo')
-        .should('be.visible')
         .should('have.descendants', 'img')
+
+      cy.get('div.Header-logo > img.Header-logo')
+        .should('be.visible')
     })
   })
 })
