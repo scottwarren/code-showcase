@@ -2,9 +2,10 @@
 
 Testing using [Cypress](https://github.com/cypress-io/cypress)
 
-Run tests using `yarn cypress:open`
+- Ensure the applications are running (`frontend` and `api` [see their Readme's for instructions])
+- Run tests using `npm run cypress:open`
 
 Tests cover:
 
-End-to-end testing
-API endpoint testing
+- End-to-end testing
+- API endpoint testing

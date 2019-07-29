@@ -10,8 +10,7 @@ I've made the assumption that MongoDB is installed and running locally.
 
 Based on the document provided for this project, I didn't appear to require the `invites` API endpoint, and thus I have left this out of the code completed.
 
-
 ### Setup
 
-* Run `yarn install` to install dependencies
-* Run `yarn start` to start the local server
+- Run `npm install` to install dependencies
+- Run `npm start` to start the local server
