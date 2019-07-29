@@ -25,12 +25,11 @@ For more detailed setup information, see the individual project's readme folder.
 
 ### Global Dependency Information
 
-* Node
-  * Version I have installed: `v8.12.0` -- latest LTS of version 8
-* NVM
-  * Version I have installed: `0.33.2`
-  * Why: Using NVM to manage Node version's between the frontend and backend
-* Nodemon
-  * Version: I have installed: `1.18.4`
-  * Why: Nodemon runs locally and updates the API upon API file changes -- useful for development
-
+- Node
+  - Version I have installed: `10.11.0`
+- NVM
+  - Version I have installed: `0.33.2`
+  - Why: Using NVM to keep the Node versions between the frontend and backend consistent
+- Nodemon
+  - Version: I have installed: `1.18.4`
+  - Why: Nodemon runs locally and updates the API upon API file changes -- useful for development
