@@ -32,6 +32,3 @@ For more detailed setup information, see the individual project's readme folder.
 - NVM
   - Version I have installed: `0.33.2`
   - Why: Using NVM to keep the Node versions between the frontend and backend consistent
-- Nodemon
-  - Version: I have installed: `1.18.4`
-  - Why: Nodemon runs locally and updates the API upon API file changes -- useful for development
