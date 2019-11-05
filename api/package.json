@@ -17,7 +17,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "faker": "^4.1.0",
-    "mongoose": "^5.3.1",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "source-map-support": "^0.5.9"
   },
